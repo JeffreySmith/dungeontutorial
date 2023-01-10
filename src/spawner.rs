@@ -26,7 +26,7 @@ pub fn spawn_enemy(ecs: &mut World, rng: &mut RandomNumberGenerator, pos: Point)
             colour: ColorPair::new(WHITE, BLACK),
             glyph,
         },
-        MovingRandomly {},
+        ChasingPlayer {},
         Health {
             current: hp,
             max: hp,
